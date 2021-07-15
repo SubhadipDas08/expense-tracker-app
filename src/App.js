@@ -7,6 +7,8 @@ import ExpenseTotal from "./components/ExpenseTotal";
 import Remaining from "./components/Remaining";
 import ExpenseList from "./components/ExpenseList";
 import AddExpesne from "./components/AddExpesne";
+import { Card } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core";
 
 const theme = createTheme({
   typography: {
@@ -14,7 +16,15 @@ const theme = createTheme({
   },
 });
 
+const useStyles = makeStyles({
+  grid: {
+    padding: "1px",
+    background: "#cbd6df",
+  },
+});
+
 const App = () => {
+  const classes = useStyles();
   return (
     <ContextProvider>
       <ThemeProvider theme={theme}>
@@ -33,7 +43,9 @@ const App = () => {
           </div>
           <h1 className="mt-3">Expenses</h1>
           <div className="row">
-            <ExpenseList />
+            <Card className={classes.grid}>
+              <ExpenseList />
+            </Card>
           </div>
           <h2 className="mt-3">Add Expense</h2>
           <div className="row mt-3">

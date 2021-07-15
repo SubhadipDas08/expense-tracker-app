@@ -7,7 +7,7 @@ const ExpenseList = () => {
 
   return (
     <>
-      <ul className="mt-3 mb-3">
+      <ul style={{ padding: "0", margin: "0" }}>
         {expenses.map((expense) => (
           <ExpenseItem
             id={expense.id}
