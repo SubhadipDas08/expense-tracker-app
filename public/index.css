@@ -1,0 +1,13 @@
+html,
+.main {
+  background: rgb(9, 32, 63);
+  background: linear-gradient(
+    133deg,
+    rgba(9, 32, 63, 1) 11%,
+    rgba(83, 120, 149, 1) 60%
+  );
+  font-family: "Montserrat", sans-serif;
+  background-size: cover;
+  height: 100%;
+  color: #fff;
+}
