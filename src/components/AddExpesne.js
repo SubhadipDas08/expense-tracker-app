@@ -70,6 +70,7 @@ const AddExpesne = (props) => {
               </Grid>
               <Grid item className={classes.strech}>
                 <TextField
+                  type="number"
                   size="small"
                   fullWidth={true}
                   label="Expense cost"
